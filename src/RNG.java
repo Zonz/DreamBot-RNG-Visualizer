@@ -4,9 +4,9 @@ public enum RNG
     Low,
     Mid,
     High,
-    W,
-    Humps,
     ParkAndMiller,
     MersenneTwister,
+    W,
+    Humps,
     Valley,
 }
