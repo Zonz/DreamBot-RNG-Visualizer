@@ -3,10 +3,8 @@ import org.dreambot.api.script.Category;
 import org.dreambot.api.script.ScriptManifest;
 
 import java.awt.*;
-import java.io.PrintWriter;
-import java.io.StringWriter;
 
-@ScriptManifest(category = Category.MISC, name = "RNG Visualizer", description = "Displays a graph of various random number distributions.", author = "Zonz", version = 0)
+@ScriptManifest(category = Category.MISC, name = "RNG Visualizer", description = "Displays a graph of various random number distributions.", author = "Zonz", version = 1.0)
 
 public class Main extends AbstractScript
 {
