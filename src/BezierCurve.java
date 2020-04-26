@@ -5,7 +5,13 @@ public class BezierCurve
 {
     public static Point[] calculatePath(int resolution, Point[] controlPoints)
     {
-        assert resolution > 0 && controlPoints != null && controlPoints.length > 1;
+        if (resolution <= 0)
+            throw new IllegalArgumentException("resolution must be greater than 0.");
+        if (controlPoints == null)
+            throw new NullPointerException("controlPoints must not be null.");
+        if (controlPoints.length == 0)
+            throw new IllegalArgumentException("controlPoints must have at least one point.");
+        
         Point[] path = new Point[resolution + 1];
         for (int i = 0; i <= resolution; i++)
             path[i] = calculate(controlPoints, (double)i / resolution);
@@ -14,7 +20,6 @@ public class BezierCurve
 
     private static Point calculate(Point[] points, double t)
     {
-        assert t >= 0 && t <= 1;
         int x = 0;
         int y = 0;
         int n = points.length - 1;
