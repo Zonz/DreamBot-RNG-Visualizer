@@ -1,6 +1,6 @@
-# DreamBot-RNG-Visualizer
-This is a mostly useless utility script to visualize the distribution of various random number generators.
-Inspired by [this forum thread](https://dreambot.org/forums/index.php?/topic/18858-weighted-random-numbers/)
+# DreamBot RNG Visualizer
+This is a mostly useless utility script for [DreamBot](https://dreambot.org/) to visualize the distribution of various random number generators.
+Inspired by [this forum thread](https://dreambot.org/forums/index.php?/topic/18858-weighted-random-numbers/). (Gaussian algorithms taken from that thread, with some cleaning and a couple bug fixes)
 
 X-Axis of the graph is each potentially generated point.
 Y-Axis is the relative probability of being generated.
